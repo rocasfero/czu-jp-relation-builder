@@ -1,0 +1,43 @@
+{
+  "name": "@czu-jp/relation-builder",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "run-p build:*",
+    "build:cjs": "tsc",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">= 10",
+    "npm": ">= 6"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.52",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.5",
+    "@types/lodash": "^4.14.157",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "husky": "4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "10.2.11",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.3"
+  }
+}
